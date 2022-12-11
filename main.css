@@ -72,7 +72,23 @@
  }
  /* footer  */
  #footer p{
-   color: grey;
+   color: #000;
+   font-size: 1.5rem;
    text-align: center;
-   padding: 3% 2% ;
+   padding-top: 10px;
+ }
+ .icon{
+  padding-left:730px;
+ }
+ .icon1{
+  margin: 5px;
+ }
+ .mailbtn{
+  margin-top: 20px ;
+  margin-left: 730px;
+  text-decoration: none;
+ }
+ .mailbtn2{
+  text-decoration: none;
+  color:grey;
  }
