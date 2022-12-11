@@ -1,0 +1,73 @@
+
+
+  #title{
+   background-color: #D6E4E5;
+   margin: 0px -1px;
+
+   /* navbar */
+}
+.navbar-item {
+   margin: 3px 30px;
+} 
+.navbar-brand {
+   color: #000;
+   font-family: "Monteserrat";
+   font-size: 3rem;
+   font-weight: 900;
+}
+.nav-img {
+   margin: 20px;
+}  
+.navbar-link
+{
+   color: grey;
+   text-decoration: none;
+}
+.navbtn{
+   margin-top: -5px;
+  margin-right:2px ;
+}
+ /* main */
+ .row{
+   margin-top:100px;
+ }
+ .mainh1{
+   color: #000;
+   font-family: "Monteserrat-bold";
+   font-weight:800;
+   font-size:  4rem;
+   text-align: center;
+   margin-top: 30px;
+ }
+ .mainimg{
+    margin-left: 100px ;
+    border-radius: 30px;
+    margin-bottom: 100px;
+ }
+.mainbtn{
+   margin: 8% 6% 4% 20%;
+ }
+ .btn2{
+   margin-left: 30px;
+ }
+ #features{
+ 
+  
+ }
+ #features h1{
+   text-align: center;
+   font-family: "monteserrat-black";
+   font-size: 2.5rem;
+   font-weight: 900;
+ }
+
+ /* testimonials */
+ #testimonials{
+   background-color: #D6E4E5;
+   padding : 7% 15%;
+   text-align: center;
+ }
+ .carousel-item{
+   padding: 7% 14%
+ }
+ 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATIENT COMPLAINT BOX</title>
+    <link rel="stylesheet" href="style_2.css">
+</head>
+<body class="vansh">
+    <h1 class="W"><u>LODGE</u> <u>YOUR</u> <u>COMPLAINT</u> <u>TO</u> <u>MINISTRY</u> <u>OF</u> <u>HEALTH</u> <u>AND</u> <u>FAMILY</u> <u>WELFARE</u></h1>
+    <div class="container">
+        <form  name ="submit-to-google-sheet" action="action_page.php">
+      
+          <label for="fname"><b><u>FIRST</u> <u>NAME</u></b></label>
+          <input type="text" id="fname" name="firstname" placeholder="Your First Name...">
+      
+          <label for="lname"><b><u>LAST</u> <u>NAME</u></b></label>
+          <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
+
+          <label for="idtype"><b><u>UNIQUE</u> <u>I'D</u> <u>TYPE</u></b></label>
+          <select id="idtype" name="idtype" >
+            <option  value ="Select*">  </option>
+            <option value="Aadhar Card">AADHAR CARD</option>
+            <option value="Pan Card">PAN CARD</option>
+            <option value="Driving Licence">DRIVING LICENCE</option>
+          </select>
+
+          <label for="uid"><b><u>UNIQUE</u> <u>I'D</u> <u>NUMBER</u></b></label>
+          <input type="text" id="uid" name="uniqueid" placeholder="Unique I'd Number...">
+
+          <label for="cnumber"><b><u>CONTACT</u> <u>NUMBER</u></b></label>
+          <input type="text" id="cnumber" name="contactnumber" placeholder="Contact Number...">
+
+          <label for="mid"><b><u>MAIL</u> <u>I'D</u></b></label>
+          <input type="text" id="mid" name="mailid" placeholder="Mail I'd...">
+          
+          <label for="Hospital"><b><u>HOSPITAL</u></b></label>
+          <select id="Hospital" name="Hospital" >
+            <option  value ="Select*">  </option>
+            <option value="Shree Ganga Ram Hospital">SHREE GANGA RAM HOSPITAL</option>
+            <option value="Indraprastha Apollo Hospital">INDRAPRASTHA APOLLO HOSPITAL</option>
+            <option value="Blk-Max Super Speciality Hospital">BLK-MAX SUPER SPECIALITY HOSPITAL</option>
+            <option value="Fortis Hospital">FORTIS HOSPITAL</option>
+            <option value="Primus Super Speciality Hospital">PRIMUS SUPER SPECIALITY HOSPITAL</option>
+            <option value="Moolchand Hospital">MOOLCHAND HOSPITAL</option>
+            <option value="All India Institute Of Medical Science">ALL INDIA INSTITUTE OF MEDICAL SCIENCE</option>
+          </select>
+      
+          <label for="Complaint"><b><u>COMPLAINT</u></b></label>
+          <textarea id="Complaint" name="Complaint" placeholder="Write A Complaint..." style="height:200px"></textarea>
+      
+          <input type="submit" value="FILE COMPLAINT">
+      
+        </form>
+        <span id="msg"></span>
+      </div>
+      <form name="submit-to-google-sheet">
+        
+      </form>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxi85Ao3Pmuhc9y_e3nQ1oWQOPJZ_61eonSIsDdnnGOdyHC_vMDwI6A2GXPtypCzra0/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML="COMPLAINT LODGED SUCCESSFULLY"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },5000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>      
+</body>
+</html>
