@@ -70,4 +70,9 @@
  .carousel-item{
    padding: 7% 14%
  }
- 
+ /* footer  */
+ #footer p{
+   color: grey;
+   text-align: center;
+   padding: 3% 2% ;
+ }
