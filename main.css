@@ -1,7 +1,7 @@
 
 
   #title{
-   background-color: #D6E4E5;
+   background-color: #A5F1E9;
    margin: 0px -1px;
 
    /* navbar */
@@ -27,6 +27,10 @@
    margin-top: -5px;
   margin-right:2px ;
 }
+.login{
+  text-decoration: none;
+  color:grey;
+}
  /* main */
  .row{
    margin-top:100px;
@@ -50,10 +54,7 @@
  .btn2{
    margin-left: 30px;
  }
- #features{
- 
-  
- }
+
  #features h1{
    text-align: center;
    font-family: "monteserrat-black";
@@ -61,9 +62,15 @@
    font-weight: 900;
  }
 
+ #features{
+ 
+  background-color: #F2E5E5;
+  height: 300px;
+ }
+
  /* testimonials */
  #testimonials{
-   background-color: #D6E4E5;
+   background-color: #E6DDC4;
    padding : 7% 15%;
    text-align: center;
  }
@@ -91,4 +98,15 @@
  .mailbtn2{
   text-decoration: none;
   color:grey;
+ }
+ #footer{
+  background-color: #fff;
+   background-image:url(images/background-main.jpeg) ;
+ }
+
+ .btnn:hover{
+ color: #fff;
+ }
+ .navbar-link:hover{
+  color: #000;
  }
