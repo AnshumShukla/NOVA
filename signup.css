@@ -3,6 +3,7 @@
     font-family: "Monteserrat-bold";
     background-color: aquamarine;
     padding: 2% 3%;
+  
 }
 .navbar-brand{
     font-size: 3rem;
@@ -27,96 +28,13 @@
     color: #fff;
 } 
 #title{
+   
+    background-image: url(images/background-main.jpeg);  
+}
+#login-page{
+    padding: 20px;
     background-image: url(images/background-main.jpeg);
-    
 }
-/* nkj */
-
-
- /*
-
-
-
-input[type=password] {
-    width: 75%;
-    padding: 10px 20px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    border-radius: 51px;
-    transition: width 0.4s ease-in-out;
-}
-
-input[type=password]:focus {
-    width: 100%
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-.forgotpass {
-    margin-top: 0.75rem;
-    font-size: 12px;
-}
-
-.buttonClass {
-    font-size: 14px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    width: 70px;
-    height: 35px;
-    border-width: 1px;
-    color: #fff;
-    border-radius: 18px;
-    text-shadow: 0px 1px 0px #051881;
-    background: linear-gradient(#002bdc, #32ded4);
-}
-
-.buttonClass:hover {
-    background: linear-gradient(#32ded4, #002bdc);
-}
-
-.login {
-    width: 50%;
-} 
- .main-page {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    outline: 2px solid;
-    width: 40%;
-    height: max-content;
-    padding: 1rem;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    border-radius: 51px;
-    background-color: aliceblue;
-} 
-.heading-section {
-    font-size: 25px;
-    text-align: center;
-}
-
-.have-an-account {
-    font-size: 15px;
-    text-align: center;
-}
-
-input[type=text] {
-    width: 75%;
-    padding: 10px 20px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    border-radius: 51px;
-    transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-    width: 100%
-}
-
-*/
 .main-page{
     margin-left: auto;
     margin-right: auto;
@@ -128,7 +46,9 @@ input[type=text]:focus {
     margin-bottom: 2rem;
     border-radius: 30px;
     margin-top: 5rem;
-    background-color: #6ba4c7;
+    background-color: #B7C4CF;
+    /* background-color:   #6ba4c7; */
+  
 }
 .heading-section{
     font-size: 25px;
@@ -143,11 +63,44 @@ input{
     border-radius: 40px;
     width: 50%;
     padding: 4px;
-    margin: 5px 0px;
+    margin: 10px 0px;
     box-sizing: border-box;
-    transition: width 0.6s ease-out;
+    text-align: center;
+  
 }
 
 input:focus {
     width: 100%;
+    transition: width 0.6s ease-out;
+}
+
+
+.buttonClass {
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 40px;
+    border-width: 1px;
+    color: #000;
+    border-radius: 10px;
+    text-shadow: 0px 1px 0px #051881;
+    background: linear-gradient(#002bdc, #32ded4);
+}
+
+.buttonClass:hover {
+    background: linear-gradient(#32ded4, #002bdc);
+}
+#footer{
+    padding: 5% 15%;
+
+}
+.icon1{
+    margin: 5px;
+   
+}
+.copy{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -89px;
 }
