@@ -78,7 +78,7 @@
    padding: 7% 14%
  }
  /* footer  */
- #footer p{
+ /* #footer p{
    color: #000;
    font-size: 1.5rem;
    text-align: center;
@@ -106,7 +106,21 @@
 
  .btnn:hover{
  color: #fff;
- }
+ } */
  .navbar-link:hover{
   color: #000;
  }
+
+ #footer{
+  padding: 5% 15%;
+
+}
+.icon1{
+  margin: 5px;
+ 
+}
+.copy{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: -89px;
+}
