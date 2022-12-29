@@ -1,0 +1,35 @@
+/* navbar */
+#navbar{
+    font-family: "Monteserrat-bold";
+    background-color: aquamarine;
+    padding: 2% 3%;
+  
+}
+.navbar-brand{
+    font-size: 3rem;
+    font-weight:800;
+    margin: 20px;
+}
+.nav-img{
+    margin: 25px;
+}
+.navbar-link{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 1.5rem;
+    color: black;
+    margin: 20px;
+}
+#footer{
+    padding: 5% 15%;
+
+}
+.icon1{
+    margin: 5px;
+   
+}
+.copy{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -89px;
+}
