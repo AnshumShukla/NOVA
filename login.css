@@ -3,6 +3,7 @@
     font-family: "Monteserrat-bold";
     background-color: aquamarine;
     padding: 2% 3%;
+    /* padding-bottom: 0px; */
   
 }
 .navbar-brand{
@@ -17,8 +18,11 @@
     text-decoration: none;
     margin-right: 30px;
     font-size: 1.5rem;
-    color: black;
+    color: grey;
     margin: 20px;
+}
+.navbar-link:hover{
+  color: black;
 }
 #footer{
     padding: 5% 15%;
@@ -33,3 +37,63 @@
     margin-top: 40px;
     margin-bottom: -89px;
 }
+#login-page{
+  background-image: url(images/background-main.jpeg );
+  
+  padding: 20px;
+}
+.main-page{
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    outline: 2px solid;
+    width: 30%;
+    height: max-content;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    margin-top: 5rem;
+    background-color: #B7C4CF;
+    /* background-color:   #6ba4c7; */
+  
+}
+.heading-section{
+    font-size: 25px;
+    text-align: center;
+}
+input{
+    border-radius: 40px;
+    width: 50%;
+    padding: 4px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    text-align: center;
+  
+}
+
+input:focus {
+    width: 100%;
+    transition: width 0.6s ease-out;
+}
+
+
+.buttonClass {
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 40px;
+    border-width: 1px;
+    color: #000;
+    border-radius: 10px;
+    text-shadow: 0px 1px 0px #051881;
+    background: linear-gradient(#002bdc, #32ded4);
+}
+
+.buttonClass:hover {
+    background: linear-gradient(#32ded4, #002bdc);
+}
+
+
+
