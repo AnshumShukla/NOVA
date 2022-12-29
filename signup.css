@@ -17,8 +17,11 @@
     text-decoration: none;
     margin-right: 30px;
     font-size: 1.5rem;
-    color: black;
+    color: grey;
     margin: 20px;
+}
+.navbar-link:hover{
+  color: black;
 }
 .login{
     color:black;
