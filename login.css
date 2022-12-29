@@ -90,8 +90,7 @@ input:focus {
     text-shadow: 0px 1px 0px #051881;
     background: linear-gradient(#002bdc, #32ded4);
 }
-
-.buttonClass:hover {
+.buttonClass:hover{
     background: linear-gradient(#32ded4, #002bdc);
 }
 
