@@ -76,6 +76,33 @@
   <section id="features">
     <h1>Eyes on Numbers</h1>
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Total Cases', 'Numbers'],
+          ['Cleanliness Issues Solved', 34], 
+          ['Extra Charges Issues Solved', 83],
+          ['Behavioral Issues Solved', 74],
+          ['Issues UnSolved', 22]
+        ]);
+
+        var options = {
+          title: 'ISSUES DETAILS : '
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <div id="piechart" style="width: 100%; height: 400px;"></div>
+
   </section>
   <section id="testimonials">
 
@@ -147,6 +174,9 @@
     <p class="copy text-muted"> © Copyright NOVA
     <p>
   </section>
+
+  
+
 </body>
 
 </html>
