@@ -1,0 +1,62 @@
+
+#title{
+    background-color:  #A5F1E9;
+}
+.navbar-item {
+    margin: 3px 30px;
+ } 
+ .navbar-brand {
+    color: #000;
+    font-family: "Monteserrat";
+    font-size: 3rem;
+    font-weight: 900;
+ }
+ .nav-img {
+    margin: 20px;
+ }  
+ .navbar-link
+ {
+    color: grey;
+    text-decoration: none;
+ }
+ .navbtn{
+    margin-top: -5px;
+   margin-right:2px ;
+ }
+ 
+ .login{
+   text-decoration: none;
+   color:grey;
+ }
+
+.para{
+    text-align: center;
+    font-size: x-large;
+    color: #fff;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 800;
+    font-size: bold;
+    height: 500px;
+    background-image: url(http://wallpapercave.com/wp/huDiDyr.jpg);
+}
+
+#footer{
+    padding: 5% 15%;
+  
+  }
+  .icon1{
+    margin: 5px;
+   
+  }
+  .copy{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -89px;
+  }
+  .mailbtn2{
+ 
+    text-decoration: none;
+    color:grey;
+   }

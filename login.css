@@ -94,5 +94,9 @@ input:focus {
     background: linear-gradient(#32ded4, #002bdc);
 }
 
-
+.mailbtn2{
+ 
+    text-decoration: none;
+    color:grey;
+   }
 
