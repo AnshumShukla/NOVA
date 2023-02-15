@@ -20,17 +20,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="main.css">
-    
-      <!-- FONTAWESOME -->
-      <script src="https://kit.fontawesome.com/15165ddffa.js" crossorigin="anonymous"></script>
-    <title>NOVA</title>
+
+  <link rel="stylesheet" href="main.css">
+
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/15165ddffa.js" crossorigin="anonymous"></script>
+  <title>NOVA</title>
 </head>
+
 <body>
   <!-- NAVBAR -->
-  <section id ="title">
-  <div class="container-fluid">
+  <section id="title">
+    <div class="container-fluid">
       <nav class=" navbar navbar-expand-lg">
         <a class="navbar-brand">NOVA</a>
         <img src="https://cdn-icons-png.flaticon.com/512/3063/3063176.png" alt="" height="40px" width="40px">
@@ -51,24 +52,56 @@
             <li class="navbar-item">
               <a class="navbar-link" href="login.html">Login</a>
             </li>
-            <button  type="button" class="btn btn-outline-dark btn-lg navbutton navbtn"> <a class="login btnn" href="Signup.html">Sign Up</a>
-              </button>
+            <button type="button" class="btn btn-outline-dark btn-lg navbutton navbtn"> <a class="login btnn"
+                href="Signup.html">Sign Up</a>
+            </button>
           </ul>
       </nav>
-      <div class="row"> 
+      <div class="row">
         <div class="col-lg-6">
-       <h1 class="mainh1"> Register your complaints in ONE click.</h1>
-       <button type="button" class="btn btn-outline-secondary btn-lg mainbtn"> <i class="fa-brands fa-google-play"></i> Download</button >
-       <button type="button" class="btn btn-outline-dark btn-lg mainbtn btn2"> <i class="fa-brands fa-apple"></i>  Download</button>
+          <h1 class="mainh1"> Register your complaints in ONE click.</h1>
+          <button type="button" class="btn btn-outline-secondary btn-lg mainbtn"> <i
+              class="fa-brands fa-google-play"></i> Download</button>
+          <button type="button" class="btn btn-outline-dark btn-lg mainbtn btn2"> <i class="fa-brands fa-apple"></i>
+            Download</button>
         </div>
         <div class="col-lg-6">
-          <img class="mainimg" src="https://media.istockphoto.com/id/687207094/photo/complaints-white-keyboard-concept-3d.jpg?b=1&s=170667a&w=0&k=20&c=bb8gPN6fnZNrUPyyt76iUwNXSjLlf4f8uJyjvqXvEcQ=" alt="">
-           </div>
+          <img class="mainimg"
+            src="https://media.istockphoto.com/id/687207094/photo/complaints-white-keyboard-concept-3d.jpg?b=1&s=170667a&w=0&k=20&c=bb8gPN6fnZNrUPyyt76iUwNXSjLlf4f8uJyjvqXvEcQ="
+            alt="">
+        </div>
       </div>
-    </section>
+  </section>
   </div>
   <section id="features">
     <h1>Eyes on Numbers</h1>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Total Cases', 'Numbers'],
+          ['Cleanliness Issues Solved', 34], 
+          ['Extra Charges Issues Solved', 83],
+          ['Behavioral Issues Solved', 74],
+          ['Issues UnSolved', 22]
+        ]);
+
+        var options = {
+          title: 'ISSUES DETAILS : '
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <div id="piechart" style="width: 100%; height: 400px;"></div>
 
   </section>
   <section id="testimonials">
@@ -76,17 +109,21 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <h2> I approach Nova India for a hospital complaint , after which i received quick response and the actions has been taken towards the hospital.</h2>
-          <img  src="images/boy_1.png" alt="rohit-profile" height="100" width="100"><br><em class="em">Rohit,pune</em>        
+          <h2> I approach Nova India for a hospital complaint , after which i received quick response and the actions
+            has been taken towards the hospital.</h2>
+          <img src="images/boy_1.png" alt="rohit-profile" height="100" width="100"><br><em class="em">Rohit,pune</em>
         </div>
         <div class="carousel-item ">
-          <h2>I was duped with a cheap quality mask offline from a hospital in delhi, after registering my complaint, quick actions had been taken.</h2>
-          <img class="testimonial-image" src="images/girl.png" alt="nisha" height="100" width="100"><br><em class="em">Nisha,Delhi</em> 
-        
+          <h2>I was duped with a cheap quality mask offline from a hospital in delhi, after registering my complaint,
+            quick actions had been taken.</h2>
+          <img class="testimonial-image" src="images/girl.png" alt="nisha" height="100" width="100"><br><em
+            class="em">Nisha,Delhi</em>
+
         </div>
         <div class="carousel-item ">
-          <h2>I was extra charged by a hospital in pune  for an operation. necessary actions has been taken towards hospital. I got my money back ,Tysm NOVA Team.  </h2>
-          <img src="images/boy.png" alt="Rakesh" height="100" width="100"><br><em class="em">Rakesh,pune</em> 
+          <h2>I was extra charged by a hospital in pune for an operation. necessary actions has been taken towards
+            hospital. I got my money back ,Tysm NOVA Team. </h2>
+          <img src="images/boy.png" alt="Rakesh" height="100" width="100"><br><em class="em">Rakesh,pune</em>
         </div>
       </div>
       <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
@@ -101,41 +138,45 @@
       </button>
     </div>
   </section>
- <section id="footer">
-  <footer >
-    <div class="row">
-    <div class=" col-lg-4 col-md-6">
-    <h6 > Contact Us</p>
-    <i class="fa-brands fa-facebook  icon1"></i>
-    <i class="fa-brands fa-instagram icon1"></i>
-    <i class="fa-solid fa-envelope icon1"></i><br>
-<button type="button" class="btn btn-outline-dark btn-lg mailbtn"><a class="mailbtn2 btnn" href="mailto:anshumshukla003@gmail.com">Mail Us</a></button>
+  <section id="footer">
+    <footer>
+      <div class="row">
+        <div class=" col-lg-4 col-md-6">
+          <h6> Contact Us</p>
+            <i class="fa-brands fa-facebook  icon1"></i>
+            <i class="fa-brands fa-instagram icon1"></i>
+            <i class="fa-solid fa-envelope icon1"></i><br>
+            <button type="button" class="btn btn-outline-dark btn-lg mailbtn"><a class="mailbtn2 btnn"
+                href="mailto:anshumshukla003@gmail.com">Mail Us</a></button>
 
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <h5 class=""> Who we are </h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About us</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Policies</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blogs</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class=""> Who we are </h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Policies</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blogs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
 
-    </ul>
-    </div>
-    <div class="column col-md-2">
-      <h5>Get Involved</h5>
-      <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Donate</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Any suggestions</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Partner with us</a></li>
-      </ul>
-  </div>
-</div>
-   </footer>
-   <p class="copy text-muted"> © Copyright NOVA<p>
-</section>
+          </ul>
+        </div>
+        <div class="column col-md-2">
+          <h5>Get Involved</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Donate</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Any suggestions</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Partner with us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <p class="copy text-muted"> © Copyright NOVA
+    <p>
+  </section>
+
+  
+
 </body>
 
 </html>
-
