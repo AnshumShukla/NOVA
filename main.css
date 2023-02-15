@@ -1,84 +1,80 @@
+#title {
+  background-color: #a5f1e9;
+  margin: 0px -1px;
 
-
-  #title{
-   background-color: #A5F1E9;
-   margin: 0px -1px;
-
-   /* navbar */
+  /* navbar */
 }
 .navbar-item {
-   margin: 3px 30px;
-} 
+  margin: 3px 30px;
+}
 .navbar-brand {
-   color: #000;
-   font-family: "Monteserrat";
-   font-size: 3rem;
-   font-weight: 900;
+  color: #000;
+  font-family: "Monteserrat";
+  font-size: 3rem;
+  font-weight: 900;
 }
 .nav-img {
-   margin: 20px;
-}  
-.navbar-link
-{
-   color: grey;
-   text-decoration: none;
+  margin: 20px;
 }
-.navbtn{
-   margin-top: -5px;
-  margin-right:2px ;
-}
-.login{
+.navbar-link {
+  color: grey;
   text-decoration: none;
-  color:grey;
 }
- /* main */
- .row{
-   margin-top:100px;
- }
- .mainh1{
-   color: #000;
-   font-family: "Monteserrat-bold";
-   font-weight:800;
-   font-size:  4rem;
-   text-align: center;
-   margin-top: 30px;
- }
- .mainimg{
-    margin-left: 100px ;
-    border-radius: 30px;
-    margin-bottom: 100px;
- }
-.mainbtn{
-   margin: 8% 6% 4% 20%;
- }
- .btn2{
-   margin-left: 30px;
- }
+.navbtn {
+  margin-top: -5px;
+  margin-right: 2px;
+}
+.login {
+  text-decoration: none;
+  color: grey;
+}
+/* main */
+.row {
+  margin-top: 100px;
+}
+.mainh1 {
+  color: #000;
+  font-family: "Monteserrat-bold";
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 30px;
+}
+.mainimg {
+  margin-left: 100px;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+.mainbtn {
+  margin: 8% 6% 4% 20%;
+}
+.btn2 {
+  margin-left: 30px;
+}
 
- #features h1{
-   text-align: center;
-   font-family: "monteserrat-black";
-   font-size: 2.5rem;
-   font-weight: 900;
- }
+#features h1 {
+  text-align: center;
+  font-family: "monteserrat-black";
+  font-size: 2.5rem;
+  font-weight: 900;
+}
 
- #features{
- 
-  background-color: #F2E5E5;
+#features {
+  background-color: #f2e5e5;
   height: 300px;
- }
+}
 
- /* testimonials */
- #testimonials{
-   background-color: #E6DDC4;
-   padding : 7% 15%;
-   text-align: center;
- }
- .carousel-item{
-   padding: 7% 14%
- }
- /* footer  */
- /* #footer p{
+/* testimonials */
+#testimonials {
+  background-color: #e6ddc4;
+  padding: 7% 15%;
+  text-align: center;
+}
+.carousel-item {
+  padding: 7% 14%;
+}
+/* footer  */
+/* #footer p{
    color: #000;
    font-size: 1.5rem;
    text-align: center;
@@ -107,19 +103,17 @@
  .btnn:hover{
  color: #fff;
  } */
- .navbar-link:hover{
+.navbar-link:hover {
   color: #000;
- }
+}
 
- #footer{
+#footer {
   padding: 5% 15%;
-
 }
-.icon1{
+.icon1 {
   margin: 5px;
- 
 }
-.copy{
+.copy {
   text-align: center;
   margin-top: 40px;
   margin-bottom: -89px;
